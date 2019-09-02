@@ -100,7 +100,9 @@ export default function createPicker(TheCalendar: React.ComponentClass): any {
     };
 
     handleCalendarChange = (value: moment.Moment) => {
+      const { onChange } = this.props;
       this.setState({ showDate: value });
+      onChange && onChange(value);
     };
 
     handleOpenChange = (open: boolean) => {

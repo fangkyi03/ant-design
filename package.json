@@ -30,11 +30,6 @@
   },
   "main": "lib/index.js",
   "module": "es/index.js",
-  "files": [
-    "dist",
-    "lib",
-    "es"
-  ],
   "typings": "lib/index.d.ts",
   "license": "MIT",
   "peerDependencies": {
